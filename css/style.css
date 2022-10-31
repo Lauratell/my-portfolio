@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+  
+  
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+  }
+  
+  
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+    
+    img {
+    width: 100%;
+  }
+  header {  
+     backgroung-color :#ab6d23;
+     text-align: center;
+     padding: 10px 0;
+  }
+  
+  footer {
+     background-color: #ab6d23;
+  }
+  
+  nav {
+    display: inline-block;
+    width: 100%  
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
+  
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+  
+  /* === Medium Devices (641px and larger) === */
+  @media only screen and (min-width: 641px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  .row {
+        flex-direction: column;
+      }
+      .col-sm-60 {
+        width: 60%;
+      }
+  /* buttons*/
+  
+    .button {
+    display: inline-block; /* since the tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #ff7f50;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: .button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }.button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+  }
+  
+    .center {
+      text-align: center;
+    }
+  
+    .main {
+      flex: 45%;
+      background-color: #f78812;
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    .side {
+      flex: 45%;
+      background-color: #f78812;
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .column {
+      width: 100%;
+     }
+   }
+  
+    
