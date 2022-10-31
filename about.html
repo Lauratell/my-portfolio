@@ -1,27 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"
-  <title>My Portfolio</title>
-</head>
-<body>
-  <h1>about me</h1>
-  
-</body>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Laura Teluska | UI Designer
+        </title>
+        <!--favicon-->
+        <link rel="shortcut icon" href="laurat.jpg"
+        <!--normalize cdn-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.goggle.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <!--montserrat (google) font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!--css stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!--fontawesome icons-->
+        <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
+        <!--responsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
-</div>
-
-<!-- Header -->
-My Portfolio</h1>
-  By Laura T.</p>
-</header>
-
-
-
-      <h1>ABOUT</h1>
-      <h3 class=>I'm a UI designer based in Naples, FL. I have a background in health care and UI design and have been working as a caregiver for the past 3 years. Combining my background in all, I am well equipped with various skills such as conducting research, problem-solving, and creating products with consumers in mind. I love to design and create things. I am interested in building solutions to help solve problems. I am eager to turn great ideas into visually appealing digital products that everyone can use. </h3>
-
-
+    <body id="about">
+        <header>
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html"><img src="img/foodgaze.jpg" alt"Logo" class="logo" /></a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Projects</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="file/Laura_Teluska_-_UIUX_Designer.pdf" target="_blank">Resume</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--begining of hero section-->
+        <main>
+            <!--this is the About heading-->
+            <div>
+                <div class="container">
+                    <h1>About</h1>
+                </div>
+            </div>
+            <!--end of the About heading-->
+            <!--beginning of second section with page content-->
+            <div>
+                <!--main section-->
+                <div class="container">
+                    <!--container/wrapper-->
+                    <picture>
+                        <source srcset="img/lauratmedia="(max-width:767px)" />
+                        <img src="img/laurat"image laura"
+                    </picture>
+                    <div>
+                        <!--beginning of my story & tools section-->
+                        <div>
+                            <!--beginning of 'my story' section-->
+                            <h2>My Story</h2>
+                            <h4>How Did You Get Into UX?</h4>
+                            <p>
+                                I always knew I wanted to be a designer growing up i enjoyed drawing and pottery. I discovered UI design ater going to college i just knew i wamted to do something different. So i took a leap of faith and enrolled myself in Career Foundry's UI Design program because I wanted to well-position myself within the design space to learn and contribute as
+                                much as I can and it's been great so far!
+                            </p>
+                           
+                              
+                          <h4>What Do You Do Outside Of Work?</h4>
+                            <p>If you can't find me designing at my computer, I'm definitely socializing with friends and family 😊.</p>
+                            <a href="files/seyram-kudolo-resume.pdf" target="_blank" class="button">Download my Resume</a>
+                        </div>
+                        <!--end of 'my story' section-->
+                        <div>
+                            <!--beginning of 'tools' section-->
+                            <h2>Skills & Tools</h2>
+                            <div class="row" id="skills">
+                                <!--beginning of 'relevant skills' and 'tools' container-->
+                                <div class="col-md-6">
+                                    <!--beginning of relevant skills-->
+                                    <h3>Relevant Skills</h3>
+                                    <ul>
+                                        <li>Generative & Evaluative Research</li>
+                                        <li>Usability Testing</li>
+                                        <li>Preference & A/B Testing</li>
+                                        <li>Persona Development</li>
+                                        <li>Interviews</li>
+                                        <li>Task Analysis and User Flows</li>
+                                        <li>Qualitative and Quantitative Data Analysis</li>
+                                        <li>Basic HTML and CSS</1i>
+                                    </ul>
+                                </div>
+                                <!--end of relevant skills-->
+                                <div class="col-md-6" id="tools">
+                                    <!--beginning of 'tools'-->
+                                    <h3>My Toolkit</h3>
+                                    <h4>Design & Prototyping</h4>
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>User flow</li>
+                                        <li>Wireframes</li>
+                                        <li>CSS</li>
+                                        <li>HTML</li>
+                                        <li>Visual studio</li>
+                                        <li>Atom</li>
+                                    </ul>
+                                </div>
+                                <!--end of 'tools'-->
+                            </div>
+                            <!--end of 'relevant skills' and 'tools' container-->
+                        </div>
+                        <!--end of 'tools' section-->
+                    </div>
+                    <!--end of my story & tools section-->
+                </div>
+                <!--end of container/wrapper-->
+            </div>
+            <!--end of section with page content-->
+        </main>
+        <br />
+        <footer id="contact">
+            <div class="container">
+                <h2>Like What You See?</h2>
+                <p>Get in touch with me by phone at <a href="tel:2392868455">(239)286-8455</a>.</p>
+                <div>
+                    <p>Prefer to email?</p>
+                    <div>
+                        <a href="lauratelluska@gmail.com" class="button contact">Email Me</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/laura-teluska-64942b194" target="_blank">
+                        <svg
+                            height="67px"
+                            id="Layer_1"
+                            style="enable-background: new 0 0 67 67;"
+                            version="1.1"
+                            viewBox="0 0 67 67"
+                            width="67px"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <path
+                                d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                                style="fill-rule: evenodd; clip-rule: evenodd; fill: #007ab9;"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <p id="copyright">COPYRIGHT Laura Teluska 2022</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
