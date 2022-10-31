@@ -1,142 +1,392 @@
+/*
+Colors used:
+Primary color (purple): #7E49F6;
+Secondary color (Cyan?): #54E9D1;
+Jaune: #FDD537
+*/
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Lato', sans-serif;
-  
-  
-  
-  body {
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-  }
-  
-  
-  }
-  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #2e2e2e;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
     font-size: 2.75em;
     font-weight: 700;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2.25em;
     font-weight: 700;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
+    font-weight: 600;
+}
+
+h4 {
     font-size: 1.35em;
-    font-weight: 400;
-    
-    img {
+    font-weight: 500;
+}
+
+img {
     width: 100%;
-  }
-  header {  
-     backgroung-color :#ab6d23;
-     text-align: center;
-     padding: 10px 0;
-  }
-  
-  footer {
-     background-color: #ab6d23;
-  }
-  
-  nav {
+}
+
+a {
+    background-color: inherit;
+    color: #7e49f6;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: inherit;
+    color: #b852f7;
+}
+
+a:hover,
+a:focus {
+    background-color: inherit;
+    color: #54e9d1;
+}
+
+a:active {
+    background-color: inherit;
+    color: #b852f7;
+}
+
+.button {
     display: inline-block;
-    width: 100%  
-  }
-  
-  .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-  
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
-  }
-  
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-  }
-  
-  /* === Medium Devices (641px and larger) === */
-  @media only screen and (min-width: 641px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-  .row {
-        flex-direction: column;
-      }
-      .col-sm-60 {
-        width: 60%;
-      }
-  /* buttons*/
-  
-    .button {
-    display: inline-block; /* since the tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
+    background-color: #7e49f6;
+    color: white !important;
+    font-weight: 700;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: .button.contact {
-    background-color: transparent;
-    color: #ff7f50;
+    border-bottom: 2px solid #54e9d1;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    opacity: 0.8;
+    background-color: #54e9d1;
+    color: black !important;
+    border-bottom: 2px solid #7e49f6;
+}
+
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.button:active,
+.button:focus {
+    background-color: #54e9d1;
+    color: #000000 !important;
+    border-bottom: 2px solid #7e49f6;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: #fdd537;
+    color: #000000 !important;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
-  }.button.contact:hover {
-    background-color: #ff7f50;
+    border-bottom: 2px solid #000000;
+}
+
+.button.contact:hover {
+    background-color: #000000;
+    color: #ffffff !important;
+    border-bottom: 2px solid #fdd537;
+}
+
+.button.contact:active {
+    background-color: #000000;
     color: #ffffff;
-  }
-  
-    .center {
-      text-align: center;
+}
+
+svg {
+    max-width: 32px;
+}
+
+/* Layout styling */
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+#hero h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+#hero span {
+    display: block;
+}
+
+#work h2 {
+    text-align: center;
+}
+
+.logo {
+    max-width: 65px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    color: inherit;
+    padding: 10px 0 4px;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: inherit;
+    color: #7e49f6;
+}
+
+nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: inherit;
+    color: #b852f7;
+}
+
+nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #7e49f6;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #54e9d1;
+    transition: 0.2s opacity;
+}
+
+nav > ul > li > a:active {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #54e9d1;
+    color: #7e49f6;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #7e49f6;
+    transition: 0.2s opacity;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+    padding: 0 0 10px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 30px;
+    padding-right: 0.3em;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #54e9d1;
+}
+
+#hero {
+    background-color: #ffffff;
+    color: #2e2e2e;
+    padding: 0.67em;
+    text-align: center;
+}
+
+main {
+    padding-top: 90.55px;
+}
+
+#contact {
+    background-color: #2e2e2e;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.67em;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 12px;
+}
+
+#about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
     }
-  
-    .main {
-      flex: 45%;
-      background-color: #f78812;
-      padding: 20px;
-      margin: 10px;
+
+    50% {
+        fill: #fcffad;
     }
-  
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+
+    100% {
+        fill: #f76414;
     }
-  
-    .side {
-      flex: 45%;
-      background-color: #f78812;
-      padding: 20px;
-      margin: 10px;
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
     }
-  
-    .row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+
+    to {
+        transform: translate(200px, 50px);
     }
-  
-    .column {
-      width: 100%;
-     }
-   }
-  
-    
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (641px and larger)
+================================= */
+@media only screen and (min-width: 641px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    #about h3 {
+        margin-top: 0;
+    }
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-md-7 {
+        width: 60%;
+    }
+
+    .col-md-5 {
+        width: 40%;
+    }
+}
