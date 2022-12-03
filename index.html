@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Laura Teluska">
-    <meta name="description" content="Sample meta description - index page.">
-    <title>Work</title>
-    <link href="img/profile.jpg" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Montserrat:wght@400;500&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/b991b0ef6a.js" crossorigin="anonymous"></script>
-</head>
+	<head>
+		<script
+			src="https://kit.fontawesome.com/319bcd23ee.js"
+			crossorigin="anonymous"
+		></script>
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="Laura Teluska Portfolio - UIUX Design, Product Design for Mobile and Desktop apps"
+		/>
+		<meta
+			name="keywords"
+			content="UX Design, UI Design, UIUX Design, User Flow Diagram, User Interviews, Competitive Analysis, Personas, Prototyping, Wirerames, HTML, CSS, JavaScript"
+		/>
+		<meta name="author" content="Laura Teluska" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Laura Teluska Portfolio  - About Laura Teluska</title>
+        <link href="img/profile.jpg" rel="shortcut icon">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&family=Secular+One&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="top"></div>
+		<header id="myNavtoggle" class="navtoggle">
+			<!--Logo-->
+			<div class="logo-col">
+				<div class="logo-cont">
+					<a href="index.html">
+						<img
+							src="img/profile.jpg"
+							alt="Laura Teluska logo"
+							class="logo"
+						/>
+					</a>
+				</div>
+			</div>
+			<!--Nav-->
+			<nav class="nav-col">
+				<ul>
+					<li>
+						<a
+							href="javascript:void(0);"
+							class="icon"
+							onclick="menuToggle()"
+							aria-label="Click on Menu"
+						>
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
 
-<title>Laura Teluska | UI Designer</title>
-
-<body>
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <svg width="102" height="51" viewBox="0 0 102 51" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
-                    <path d="M23 31L44.5 3L77.5 48L100 19.5"stroke-width="2.5" stroke-linecap="round" />
-                    <path d="M2 31L23.5 3L56.5 48L79 19.5" stroke-width="2.5" stroke-linecap="round" />
-                </svg>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="files/LauraTeluskaResume.pdf" target="_blank">Resume</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-		<!-- For the navigation -->
+                    <li class="bordersIn aos-item" data-aos="fade-left">
+                        <a href="index.html">Project</a>
+                    </li>     
+					
+					<li class="bordersIn aos-item" data-aos="fade-left">
+						<a href="about.html">About</a>
+                    </li> 
+                    <li class="bordersIn aos-item" data-aos="fade-left">
+                        <a href="files/LauraTeluskaResume.pdf" target="_blank">Resume</a></li>
+					</li>
+					<li class="bordersIn aos-item" data-aos="fade-left">
+						<a href="#contact" onclick="menuToggle()">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /Header -->
 
     <main>
         <!-- For the hero section -->
@@ -62,7 +100,7 @@
                   <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
                     <picture><!--For students, the images below should be updated with real images-->
                       <source srcset="img/projects/foodgaze/foodgaze_cover.jpg" media="(max-width:767px)">
-                      <img src="img/foodgaze.jpg" alt="My Image">
+                      <img src="img/food-gaze.jpg" alt="My Image">
                     </picture>
                   </div><!-- end first column -->
                   <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
@@ -70,7 +108,7 @@
                     <p><!-- open paragraph -->
                       Food Gaze is an app designed to help people create quick and healthy food with the ingredients they have at home.
                     </p><!-- end paragraph -->
-                    <a href="foodgaze.html" class="button">Read more</a><!-- button or link label --> 
+                    <a href="foodgaze.html" class="button">Read more</a><!-- button or link label -->
                   </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
                 
@@ -78,7 +116,7 @@
                 <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
                   <div class=" col-md-6 col-lg-7"><!-- open first column (used for image) -->
                     <picture><!--For students, the images below should be updated with real images-->
-                      <source srcset="img/projects/birdy/birdy_cover.jpg" media="(max-width:767px)">
+                      <source srcset="img/Birdy.jpg" media="(max-width:767px)">
                       <img src="img/birdy.jpg" alt="My Image">
                     </picture>
                   </div><!-- end first column -->
@@ -733,10 +771,9 @@
             </ul>
             <p>Copyright Laura Teluska 2022</p>
         </div>
-        
       </footer>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-          <script src="js/scripts.js"></script>
-      </body>
-      
-      </html>
+      <!-- /Footer-->
+      <script src="js/scripts.js"></script>
+    </body>
+  </html>
+	

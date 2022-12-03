@@ -1,60 +1,71 @@
 console.log("Hi! Welcome to My Portfolio Site")
+// Mobile Nav
+var closeIcon =
+	'<a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-xmark"></i></a>';
+var menuIcon =
+	'<a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>';
+
+function replaceItem(iconName) {
+	var listItem = document.querySelector('li:first-child');
+	var newItem = document.createElement('li');
+	newItem.innerHTML = iconName;
+	listItem.parentNode.replaceChild(newItem, listItem);
+}
 
 function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
- x.className += ' responsive';
-} else {
- x.className = 'navtoggle';
-}
-}
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+	var x = document.getElementById('myNavtoggle');
+	if (x.className === 'navtoggle') {
+		x.className += ' responsive';
+		replaceItem(closeIcon);
+	} else {
+		x.className = 'navtoggle';
+		replaceItem(menuIcon);
+	}
 }
 
-const hamburgerBtn = document.getElementById("js-hamburger");
-const topLine = document.getElementById("js-top-line");
-const centerLine = document.getElementById("js-center-line");
-const bottomLine = document.getElementById("js-bottom-line");
-const nav = document.getElementById("js-nav");
+// Smooth Scrolling
+// Select all links with hashes
+$('a[href*="#"]')
+	// Remove links that don't actually link to anything
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function (event) {
+		// On-page links
+		if (
+			location.pathname.replace(/^\//, '') ==
+				this.pathname.replace(/^\//, '') &&
+			location.hostname == this.hostname
+		) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate(
+					{
+						scrollTop: target.offset().top,
+					},
+					1000,
+					function () {
+						// Callback after animation
+						// Must change focus!
+						var $target = $(target);
+						$target.focus();
+						if ($target.is(':focus')) {
+							// Checking if the target was focused
+							return false;
+						} else {
+							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+							$target.focus(); // Set focus again
+						}
+					}
+				);
+			}
+		}
+	});
 
-hamburgerBtn.addEventListener("click", () => {
-  topLine.classList.toggle("active");
-  centerLine.classList.toggle("active");
-  bottomLine.classList.toggle("active");
-  nav.classList.toggle("show");
-});
-
-// Toggle the hamburger menu as visible or not
-
-var viewportWidth = $(window).width();
-
-function menuToggle() {
-  var x = document.getElementById("myNavtoggle");
-  if (x.className === "navtoggle" && viewportWidth < 640) {
-    x.className += " responsive"; //add class name with space "_" to seperate addition
-  } else {
-    x.className = "navtoggle";
-  }
-}
-
-// Hide or show header on scrolling - animation duration set in header CSS
-
-var prev = 0;
-var $window = $(window);
-var nav = $("header");
-
-$window.on("scroll", function () {
-  var scrollTop = $window.scrollTop();
-  if (scrollTop === 0) {
-  } else if (scrollTop > 11) {
-    nav.toggleClass("hidden", scrollTop > prev);
-    prev = scrollTop;
-  }
-});
+// Panzoom
+const myPanzoom = new Panzoom(document.querySelector('#myPanzoom'));
+myPanzoom.zoomIn();
