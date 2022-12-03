@@ -1,5 +1,23 @@
 console.log("Hi! Welcome to My Portfolio Site")
 
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+ x.className += ' responsive';
+} else {
+ x.className = 'navtoggle';
+}
+}
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 const hamburgerBtn = document.getElementById("js-hamburger");
 const topLine = document.getElementById("js-top-line");
 const centerLine = document.getElementById("js-center-line");
