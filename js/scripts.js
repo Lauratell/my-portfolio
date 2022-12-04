@@ -68,4 +68,5 @@ $('a[href*="#"]')
 
 // Panzoom
 const myPanzoom = new Panzoom(document.querySelector('#myPanzoom'));
+
 myPanzoom.zoomIn();
