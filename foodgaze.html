@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+   <html lang="en" dir="ltr">  
 	<head>
 		<script
 			src="https://kit.fontawesome.com/319bcd23ee.js"
@@ -13,68 +13,170 @@
 		<meta
 			name="keywords"
 			content="UX Design, UI Design, UIUX Design, User Flow Diagram, User Interviews, Competitive Analysis, Personas, Prototyping, Wirerames, HTML, CSS, JavaScript"
+		
 		/>
-		<meta name="author" content="Laura Teluska" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Laura Teluska Portfolio  - About Laura Teluska</title>
-        <link href="img/profile.jpg" rel="shortcut icon">
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&family=Secular+One&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://code.jquery.com/jquery-3.6.1.min.js"
-			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<div id="top"></div>
-		<header id="myNavtoggle" class="navtoggle">
-			<!--Logo-->
-			<div class="logo-col">
-				<div class="logo-cont">
-					<a href="index.html">
-						<img
-							src="img/profile.jpg"
-							alt="Laura Teluska logo"
-							class="logo"
-						/>
-					</a>
-				</div>
-			</div>
-			<!--Nav-->
-			<nav class="nav-col">
-				<ul>
-					<li>
-						<a
-							href="javascript:void(0);"
-							class="icon"
-							onclick="menuToggle()"
-							aria-label="Click on Menu"
-						>
-							<i class="fas fa-bars"></i>
-						</a>
-					</li>
+     <head>
+       <meta charset="utf-8">
+       <meta name="author" content="Laura Teluska">
+       <meta name="description" content="Sample meta description - project.">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="img/profile.jpg" rel="shortcut icon">
+       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+       
+       <title>Laura Teluska | UI Designer</title>
+     </head>
+     <body id="about-page">
+       <!-- For the header -->
+       <header>
+           <!-- For the navigation -->
+           <div class="container">
+               <a href="index.html">
+                <img src="img/profile.jpg" class="logo" alt="Logo" >
+               </a>
+               <nav>
+                 </nav>
+               
+     
+       <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width" >
+        <meta http-equiv="X-UA-Compatible"content="ie=edge" >
 
-                    <li class="bordersIn aos-item" data-aos="fade-left">
-                        <a href="index.html">Project</a>
-                    </li>     
-					
-					<li class="bordersIn aos-item" data-aos="fade-left">
-						<a href="about.html">About</a>
-                    </li> 
-                    <li class="bordersIn aos-item" data-aos="fade-left">
-                        <a href="files/LauraTeluskaResume.pdf" target="_blank">Resume</a></li>
-					<li class="bordersIn aos-item" data-aos="fade-left">
-						<a href="#contact" onclick="menuToggle()">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+         
+        <style>
+            body {
+                background-color: rgb(208, 168, 209);
+            }
+            
+            img {
+                width: 50%;
+            }
+            /* Styling the menu button */
+            .menu-btn {
+                position: absolute;
+                z-index: 3;
+                right: 35px;
+                top: 35px;
+                cursor: pointer;
+                transition: all 0.5s ease-out;
+            }
+     
+            /* Styling the hamburger lines */
+            .menu-btn .btn-line {
+                width: 28px;
+                height: 3px;
+                margin: 0 0 5px 0;
+                background: black;
+                transition: all 0.5s ease-out;
+            }
+     
+            /* Adding transform to the X */
+            .menu-btn.close {
+                transform: rotate(180deg);
+            }
+     
+            /* Styling the three lines to make it an X */
+            .menu-btn.close .btn-line:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+     
+            .menu-btn.close .btn-line:nth-child(2) {
+                opacity: 0;
+            }
+     
+            .menu-btn.close .btn-line:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+     
+            /* Styling the position of the menu icon */
+            .menu {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                opacity: 0.9;
+                visibility: hidden;
+            }
+     
+            .menu.show {
+                visibility: visible;
+            }
+     
+            /* Add transition delay*/
+            .nav-item {
+                transition-delay: 0.2s;
+            }
+    
+        </style>
+    </head>
+     
+
+        <header>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+     
+            <nav class="menu">
+                <div class="menu-branding">
+                    <div class="portrait">
+                        
+                    </div>
+                </div>
+     
+                <ul class="navigation">
+					<li class="active"><a href="index.html">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="files/LauraTeluskaResume.pdf" target="_blank">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+     
+        <script>
+            // Select dom items
+            const menuBtn = document.querySelector(".menu-btn");
+            const menu = document.querySelector(".menu");
+            const menuNav = document.querySelector(".menu-nav");
+            const menuBranding = document.querySelector(".menu-branding");
+            const navItems = document.querySelectorAll(".nav-item");
+     
+            // Set the initial state of the menu
+            let showMenu = false;
+     
+            menuBtn.addEventListener("click", toggleMenu);
+     
+            function toggleMenu() {
+                if (!showMenu) {
+                    menuBtn.classList.add("close");
+                    menu.classList.add("show");
+                    menuNav.classList.add("show");
+                    menuBranding.classList.add("show");
+                    navItems.forEach((item) =>
+                        item.classList.add("show"));
+     
+                    // Reset the menu state
+                    showMenu = true;
+                } else {
+                    menuBtn.classList.remove("close");
+                    menu.classList.remove("show");
+                    menuNav.classList.remove("show");
+                    menuBranding.classList.remove("show");
+                    navItems.forEach((item) =>
+                        item.classList.remove("show"));
+     
+                    // Reset the menu state
+                    showMenu = false;
+                }
+            }
+        </script>
+   
 		<!-- /Header -->
 
 
